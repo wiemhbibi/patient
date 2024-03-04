@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Patient</title>
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fdfdfd; /* Blanc */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #f2f2f2; /* Gris clair */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      color: #007bff; /* Bleu */
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #333;
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #007bff; /* Bleu */
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0056b3; /* Bleu plus foncé au survol */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Inscription</h2>
+    <form id="registrationForm" action="#" method="post">
+      <ul>
+        <li>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </li>
+
+        <li>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </li>
+
+        <li>
+          <label for="cin">CIN :</label>
+          <input type="text" id="cin" name="cin" required>
+        </li>
+
+        <li>
+          <label for="dateNaissance">Date de Naissance :</label>
+          <input type="date" id="dateNaissance" name="dateNaissance" required>
+        </li>
+
+        <li>
+          <label for="telephone">Numéro de Téléphone :</label>
+          <input type="tel" id="telephone" name="telephone" required>
+          <!-- Champ non limité pour le numéro de téléphone -->
+        </li>
+
+        <li>
+          <label>Sexe :</label>
+          <div class="radio-group">
+            <input type="radio" id="homme" name="sexe" value="homme" required>
+            <label for="homme">Homme</label>
+            
+            <input type="radio" id="femme" name="sexe" value="femme" required>
+            <label for="femme">Femme</label>
+          </div>
+        </li>
+      </ul>
+
+      <button type="submit">Confirmer l'Inscription</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
